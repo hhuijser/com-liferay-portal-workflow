@@ -86,7 +86,7 @@ public class MultiLanguageConditionEvaluator implements ConditionEvaluator {
 		ScriptLanguage scriptLanguage = ScriptLanguage.parse(language);
 
 		if (scriptLanguage.equals(ScriptLanguage.JAVA)) {
-			return language + StringPool.COLON + 
+			return language + StringPool.COLON +
 				StringUtil.trim(conditionEvaluatorClassName);
 		}
 
